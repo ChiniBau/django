@@ -1,0 +1,16 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+<div>
+    <h3>Login</h3>
+    <div>
+        <form method="POST">
+{% csrf_token %}
+<button type="submit">Login</button>
+        </form>
+        <div>
+            <p>Don't have an account? <a>Register here</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
